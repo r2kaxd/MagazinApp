@@ -1,0 +1,18 @@
+﻿<Window x:Class="МагазинApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Магазин" Height="350" Width="525">
+    <Viewbox Stretch="Fill">
+        <Grid Height="334" Width="525">
+            <Grid.Background>
+                <ImageBrush ImageSource="/img/mg_tl.jpg" TileMode="None" Stretch="UniformToFill"/>
+            </Grid.Background>
+            <Button x:Name="ButtonProducts" Content="Продукты" Width="100" Click="ButtonProducts_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Height="35"/>
+            <Button x:Name="ButtonEmployees" Content="Сотрудники" Width="100" Click="ButtonEmployees_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,51,0,0" Height="35"/>
+            <Button x:Name="ButtonSales" Content="Продажи" Width="100" Click="ButtonSales_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="415,10,0,0" Height="35"/>
+            <Button x:Name="ButtonStock" Content="Остатки на складе" Width="100" Click="ButtonStock_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,91,0,0" Height="35"/>
+            <Button x:Name="ButtonHistory" Content="История транзакций" Width="100" Click="ButtonHistory_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,131,0,0" Height="35"/>
+            <Button x:Name="ButtonReports" Content="Отчеты" Width="100" Click="ButtonReports_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,171,0,0" Height="35"/>
+        </Grid>
+    </Viewbox>
+</Window>

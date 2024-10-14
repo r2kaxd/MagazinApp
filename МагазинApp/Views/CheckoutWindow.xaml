@@ -1,0 +1,19 @@
+﻿<Window x:Class="МагазинApp.CheckoutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Оформить покупку" Height="400" Width="400">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/img/360_F_485197985_WvYk76tNcmHcjW1Nvhbfk6pDWreeVFi2.jpg"/>
+        </Grid.Background>
+        <Label Content="Продукты:" HorizontalAlignment="Left" Margin="10,1,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ComboBoxProducts" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="134" SelectionChanged="ComboBoxProducts_SelectionChanged" Height="35"/>
+        <Label Content="Количество:" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxQuantity" HorizontalAlignment="Left" Height="39" Margin="10,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
+        <Button x:Name="ButtonAddToCart" Content="Добавить в корзину" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Width="134" Click="ButtonAddToCart_Click" Height="35"/>
+        <ListBox x:Name="ListBoxCart" HorizontalAlignment="Left" Height="95" Margin="10,202,0,0" VerticalAlignment="Top" Width="260"/>
+        <Label Content="Итого:" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxTotal" HorizontalAlignment="Left" Height="35" Margin="61,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" IsReadOnly="True"/>
+        <Button x:Name="ButtonConfirmPayment" Content="Подтвердить оплату" HorizontalAlignment="Left" Margin="206,310,0,0" VerticalAlignment="Top" Width="139" Click="ButtonConfirmPayment_Click" Height="35"/>
+    </Grid>
+</Window>

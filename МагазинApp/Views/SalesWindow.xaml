@@ -1,0 +1,13 @@
+﻿<Window x:Class="МагазинApp.SalesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Продажи" Height="300" Width="400">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/img/360_F_485197985_WvYk76tNcmHcjW1Nvhbfk6pDWreeVFi2.jpg"/>
+        </Grid.Background>
+        <DataGrid x:Name="DataGridSales" AutoGenerateColumns="True" Margin="10"/>
+        <Button x:Name="ButtonAddSale" Content="Добавить продажу" HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top" Width="127" Click="ButtonAddSale_Click" Height="35"/>
+        <Button x:Name="ButtonCheckout" Content="Оформить покупку" HorizontalAlignment="Left" Margin="142,208,0,0" VerticalAlignment="Top" Width="127" Click="ButtonCheckout_Click" Height="35"/>
+    </Grid>
+</Window>
